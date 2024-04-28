@@ -39,10 +39,10 @@ public class Board {
 
         grid = new Grid(8,8, movesDatabaseConnection);
         setNewGame();
-        try (BufferedReader br = new BufferedReader(new FileReader("resources/data.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("app/resources/data.txt"))) {
             String line;
             
-            System.out.println("Processing resources/data.txt");
+            System.out.println("Processing app/resources/data.txt");
             boolean validMovesSoFar = true;
             while ((line = br.readLine()) != null && validMovesSoFar) {
                 System.out.println(line);
